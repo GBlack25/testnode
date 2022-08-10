@@ -10,7 +10,7 @@ app.use(cors());
 const PORT = process.env.PORT || 3001;
 const HOST = "0.0.0.0";
 
-app.post("/api/payment/payment-notify", function (req, res) {
+app.post("/api/payment/notify", function (req, res) {
   console.log(req?.body);
   return res.json({ body: req?.body });
 });
