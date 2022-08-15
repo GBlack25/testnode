@@ -14,7 +14,7 @@ app.get("/", function(req, res) {
   res.send("Hello");
 });
 
-app.post("/api/payment/notify", function (req, res) {
+app.post("/api/payway/notify", function (req, res) {
   console.log(req?.body);
   return res.json({ body: req?.body });
 });
